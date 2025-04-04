@@ -90,7 +90,7 @@ function App() {
 
             <h3 className="text-lg font-bold mt-4">Recommended Careers:</h3>
             <ul className="list-disc list-inside">
-              {response.CareerPaths.map((career, index) => (
+              {response.CareerPaths?.map((career, index) => (
                 <li key={index} className="mb-2">
                   <span className="font-semibold">{career.Title}</span>
                   {":  "}
@@ -101,7 +101,7 @@ function App() {
 
             <h3 className="text-lg font-bold mt-4 mb-6">Important consederations:</h3>
             <ul className="list-disc list-inside">
-              {response.ImportantConsiderations.map((consideration, index) => (
+              {response.ImportantConsiderations?.map((consideration, index) => (
                 <li key={index} className="mb-2">
                   {consideration}
                 </li>
